@@ -65,7 +65,7 @@ const renderer = new THREE.WebGLRenderer({
 
 renderer.toneMapping = THREE.ACESFilmicToneMapping;
 renderer.outputEncoding = THREE.sRGBEncoding;
-renderer.toneMappingExposure = 1.95;
+renderer.toneMappingExposure = 0.9;
 renderer.setSize(sizes.width, sizes.height);
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1.0));
 
@@ -81,10 +81,10 @@ camera.position.z = 1;
 scene.add(camera);
 
 const controls = new OrbitControls(camera, canvas);
-controls.enableDamping = true;
-controls.minDistance = 0.5;
-controls.maxDistance = 5;
-controls.target.set(0, 0, 0);
+// controls.enableDamping = true;
+controls.minDistance = 0.39;
+controls.maxDistance = 1;
+controls.enablePan = false;
 controls.update();
 
 const clock = new THREE.Clock();
