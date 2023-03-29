@@ -4,13 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;600;700&family=Tenor+Sans&display=swap"
+      rel="stylesheet"
+    />
     <title>Plasticine App</title>
   </head>
   <body>
-    <div class="progress-bar-container">
-      <progress id="progress-bar" value="0" max="100"></progress>
-    </div>
     <div id="app">
+      <div class="progress-bar-container">
+        <progress id="progress-bar" value="0" max="100"></progress>
+      </div>
       <canvas class="webgl"></canvas>
       <script type="module" src="/main.js"></script>
     </div>
