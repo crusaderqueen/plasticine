@@ -63,7 +63,6 @@ const renderer = new THREE.WebGLRenderer({
   alpha: true,
 });
 
-renderer.physicallyCorrectLights = true;
 renderer.toneMapping = THREE.ACESFilmicToneMapping;
 renderer.outputEncoding = THREE.sRGBEncoding;
 renderer.toneMappingExposure = 1.95;
