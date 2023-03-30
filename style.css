@@ -53,7 +53,7 @@ html:focus-within {
 }
 
 body {
-  background: hsl( var(--clr-dark)/.9);
+  background: hsl( var(--clr-white));
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
