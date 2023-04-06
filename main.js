@@ -34,7 +34,7 @@ hdrLoader.load(environmentURL, (hdr) => {
   scene.environment = hdr;
 });
 
-const modelUrl = new URL("./public/assets/David-eye1.glb", import.meta.url);
+const modelUrl = new URL("./public/assets/scull.glb", import.meta.url);
 const loader = new GLTFLoader(loadingManager);
 loader.load(modelUrl.href, (gltf) => {
   const model = gltf.scene;
