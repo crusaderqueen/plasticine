@@ -70,20 +70,20 @@ renderer.setSize(sizes.width, sizes.height);
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1.0));
 
 const camera = new THREE.PerspectiveCamera(
-	75,
+	35,
 	sizes.width / sizes.height,
 	0.1,
 	100
 );
 camera.position.x = 0;
-camera.position.y = 0;
-camera.position.z = 1;
+camera.position.y = 0.5;
+camera.position.z = 1.5;
 scene.add(camera);
 
 const controls = new OrbitControls(camera, canvas);
 // controls.enableDamping = true;
-controls.minDistance = 0.39;
-controls.maxDistance = 1;
+controls.minDistance = 1;
+controls.maxDistance = 3;
 controls.enablePan = false;
 controls.update();
 
